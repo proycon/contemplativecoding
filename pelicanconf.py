@@ -33,14 +33,20 @@ MENUITEMS = [('About me', 'http://proycon.anaproy.nl'),
 FEED_ALL_RSS = 'feeds/all.rss.xml'
 CATEGORY_FEED_RSS = 'feeds/%s.rss.xml'
 
-LINKS = (('My personal website', 'http://proycon.anaproy.nl'),
+LINKS = sorted([
+        ('The dot on the ceiling', 'http://tdotc.wordpress.com/'),
         ('Folgert Karsdorp', 'http://fbkarsdorp.github.io'),
-        ('Pythonic Perambulations', 'http://jakevdp.github.io/'))
+        ('Jeroen Janssens', 'http://jeroenjanssens.com/'),
+        ('Mnmlist', 'http://mnmlist.com/'),
+        ('Zen Habits', 'http://zenhabits.net'),
+        ('Pythonic Perambulations', 'http://jakevdp.github.io/'),
+        ('LingPipe Blog','http://lingpipe-blog.com/')
+])
 
-SOCIAL = (('twitter', 'http://twitter.com/proycon'),
+SOCIAL = (('github', 'http://github.com/proycon'),
+          ('twitter', 'http://twitter.com/proycon'),
           ('youtube','http://youtube.com/proycon'),
-          ('facebook','http://facebook.com/proycon'),
-          ('github', 'http://github.com/proycon'),)
+          ('facebook','http://facebook.com/proycon'))
 
 PLUGIN_PATH = '/home/proycon/pelican-plugins'
 PLUGINS = []
@@ -63,7 +69,7 @@ PLUGINS = []
 #TEMPLATE_PAGES = {'pages/jinja2_template.html': 'jinja2_template.html'}
 
 GITHUB_USER = 'proycon'
-GITHUB_REPO_COUNT = 8
+GITHUB_REPO_COUNT = 4
 GITHUB_SKIP_FORK = True
 GITHUB_SHOW_USER_LINK = True
 
