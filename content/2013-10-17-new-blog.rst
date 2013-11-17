@@ -1,0 +1,22 @@
+And so it begins...
+####################
+
+:date: 2013-11-17 12:00
+:comments: true
+:slug: new-blog
+:summary: Welcome to my new tech blog! My aim here is to show some of the things I'm working on, and in doing so hopefully providing others with useful open source tools and ideas for their own projects....
+:lang: en
+:tags: intro
+:category: main
+
+Welcome to my new tech blog! My aim here is to show some of the things I'm working on,
+and in doing so hopefully providing others with useful open source tools and
+ideas for their own projects.
+
+A small introduction may be in order for those who don't know me yet. My name
+is Maarten van Gompel (aka proycon), and I'm a PhD researcher and scientific
+programmer at the Centre for Language Studies, Radboud University Nijmegen.  
+
+Starting a blog always comes with the obvious but daunting obligation of
+maintaining it. Expect to see an occasional, like bi-monthly, post.
+
