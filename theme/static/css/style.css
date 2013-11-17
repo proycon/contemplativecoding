@@ -78,3 +78,10 @@ a, a:hover {
     color: #777;
     font-style: italic;
 }
+#logo {
+    float: left;
+    background: url(../images/logo.png) no-repeat;
+    width: 100px; 
+    height: 48px;
+    margin-left: -100px;
+}
