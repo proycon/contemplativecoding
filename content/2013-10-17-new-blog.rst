@@ -4,14 +4,14 @@ And so it begins...
 :date: 2013-11-17 12:00
 :comments: true
 :slug: new-blog
-:summary: Welcome to my new blog! Here I will talk about software development and show some of the things I am working on. At times it is good to take some distance from coding, and contemplate that what you have written. I doing so, I can hopefully offer interesting open source tools and ideas to the community.
+:summary: Welcome to my new blog! Here I will talk about software development and show some of the things I am working on. At times it is good to take some distance from coding, and contemplate what you have written. In doing so, I can hopefully offer interesting open source tools and ideas to the community.
 :lang: en
 :tags: intro
 :category: main
 
 Welcome to my new blog! Here I will talk about software development and show
 some of the things I am working on. At times it is good to take some distance
-from coding, and contemplate that what you have written. I doing so, I can
+from coding, and contemplate what you have written. In doing so, I can
 hopefully offer interesting open source tools and ideas to the community.
 
 A small introduction may be in order for those who don't know me yet. My name
