@@ -100,3 +100,22 @@ a, a:hover {
     position-relative;
 }
 
+#footer {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 80%;
+    margin-top: 150px;
+    bottom: 0px;
+}
+#footer ul {
+    display: block;
+    margin-top: 5px;
+    font-family: monospace;
+    list-style-type: none;
+}
+#footer li {
+    padding-left: 20px;
+}
+
+
