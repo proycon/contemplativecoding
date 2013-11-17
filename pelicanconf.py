@@ -18,7 +18,7 @@ LOCALE = "C"
 DEFAULT_PAGINATION = 4
 DEFAULT_DATE = (2013, 11, 12, 14, 1, 1)
 
-THEME = "/home/proycon/pelican-themes/pelican-bootstrap4"
+THEME = "/home/proycon/work/contemplativecoding/theme"
 
 # Set the article URL
 ARTICLE_URL = 'blog/{date:%Y}/{date:%m}/{date:%d}/{slug}/'
