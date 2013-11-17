@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Contemplative Coding</title><link>http://proycon.github.io/</link><description>Meditations on language &amp; technology</description><atom:link href="http://proycon.github.io/feeds/main.rss.xml" rel="self"></atom:link><lastBuildDate>Tue, 12 Nov 2013 14:01:01 +0100</lastBuildDate><item><title>And so it begins...</title><link>http://proycon.github.io/blog/2013/11/17/new-blog/</link><description>&lt;p&gt;Welcome to my new tech blog! My aim here is to show some of the things I'm working on,
+and in doing so hopefully providing others with useful open source tools and
+ideas for their own projects.&lt;/p&gt;
+&lt;p&gt;A small introduction may be in order for those who don't know me yet. My name
+is Maarten van Gompel (aka proycon), and I'm a PhD researcher and scientific
+programmer at the Centre for Language Studies, Radboud University Nijmegen.&lt;/p&gt;
+&lt;p&gt;Starting a blog always comes with the obvious but daunting obligation of
+maintaining it. Expect to see an occasional, like bi-monthly, post.&lt;/p&gt;
+</description><dc:creator xmlns:dc="http://purl.org/dc/elements/1.1/">Maarten van Gompel (proycon)</dc:creator><pubDate>Tue, 12 Nov 2013 14:01:01 +0100</pubDate><guid>tag:proycon.github.io,2013-11-17:blog/2013/11/17/new-blog/</guid><category>intro</category></item></channel></rss>

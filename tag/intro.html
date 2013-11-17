@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:og="http://ogp.me/ns#"
+      xmlns:fb="https://www.facebook.com/2008/fbml">
+<head>
+    <title>Contemplative Coding - intro</title>
+    <!-- Using the latest rendering mode for IE -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Open Graph tags -->
+
+            <meta property="og:type" content="website"/>
+            <meta property="og:title" content="Contemplative Coding"/>
+            <meta property="og:url" content="http://proycon.github.io"/>
+            <meta property="og:description" content="Contemplative Coding"/>
+
+    <!-- Bootstrap -->
+        <link rel="stylesheet" href="http://proycon.github.io/theme/css/bootstrap.min.css" type="text/css"/>
+    <link href="http://proycon.github.io/theme/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://proycon.github.io/theme/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <link href="http://proycon.github.io/theme/css/pygments.css" rel="stylesheet">
+    <link rel="stylesheet" href="http://proycon.github.io/theme/css/style.css" type="text/css"/>
+    <!-- JavaScript plugins (requires jQuery) -->
+    <script src="http://code.jquery.com/jquery.js"></script>
+
+        <link href="http://proycon.github.io/feeds/all.atom.xml" type="application/atom+xml" rel="alternate"
+              title="Contemplative Coding ATOM Feed"/>
+        <link href="http://proycon.github.io/feeds/all.rss.xml" type="application/atom+xml" rel="alternate"
+              title="Contemplative Coding RSS Feed"/>
+
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a href="http://proycon.github.io" class="navbar-brand"><strong>Contemplative Coding</strong></a>
+            <span id="navbar-subtitle">Meditations on language & technology</span>
+        </div>
+        <div class="collapse navbar-collapse navbar-ex1-collapse">
+            <ul class="nav navbar-nav">
+                    <li><a href="http://proycon.anaproy.nl">About me</a></li>
+                    <li><a href="http://github.com/proycon">My Code</a></li>
+                    <li><a href="http://proycon.anaproy.nl/publications">Publications</a></li>
+                        <li >
+                            <a href="http://proycon.github.io/category/main.html">main</a>
+                        </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="http://proycon.github.io/archives.html"><i class="icon-th-list"></i>Archives</a></li>
+            </ul>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+</nav>
+<!-- /.navbar -->
+<div class="container">
+    <div class="row">
+        <div class="col-lg-9">
+            <article>
+                <h2><a href="http://proycon.github.io/blog/2013/11/17/new-blog/">And so it begins...</a></h2>
+                <div class="summary"><p class="first last">Welcome to my new tech blog! My aim here is to show some of the things I'm working on, and in doing so hopefully providing others with useful open source tools and ideas for their own projects....</p>
+
+                    <a class="btn btn-default btn-xs" href="http://proycon.github.io/blog/2013/11/17/new-blog/">more ...</a>
+                </div>
+            </article>
+            <hr/>
+
+        </div>
+        <div class="col-lg-3 well well-sm" id="sidebar">
+<aside>
+    <section>
+        <ul class="list-group list-group-flush">
+                <li class="list-group-item"><h4><i class="icon-home icon-large"></i>Social</h4></li>
+                    <li class="list-group-item"><a href="http://twitter.com/proycon"><i
+                            class="icon-twitter-sign icon-large"></i>twitter
+                    </a></li>
+                    <li class="list-group-item"><a href="http://youtube.com/proycon"><i
+                            class="icon-youtube-sign icon-large"></i>youtube
+                    </a></li>
+                    <li class="list-group-item"><a href="http://facebook.com/proycon"><i
+                            class="icon-facebook-sign icon-large"></i>facebook
+                    </a></li>
+                    <li class="list-group-item"><a href="http://github.com/proycon"><i
+                            class="icon-github-sign icon-large"></i>github
+                    </a></li>
+
+
+
+            <li class="list-group-item"><a href="http://proycon.github.io/tags.html"><h4><i class="icon-tags icon-large"></i>Tags</h4></a></li>
+                <li class="list-group-item tag-4">
+                    <a href="http://proycon.github.io/tag/intro.html">
+                        intro
+                    </a>
+                </li>
+        </ul>
+    </section>
+
+
+    <section>
+    <ul class="list-group list-group-flush">
+    <li class="list-group-item"><h4><i class="icon-github icon-large"></i>GitHub Repos</h4></li>
+        <div id="gh_repos">
+            <p class="list-group-item">Status updating...</p>
+        </div>
+            <a href="https://github.com/proycon">@proycon</a> on GitHub
+    </ul>
+        <script type="text/javascript">
+            $(document).ready(function () {
+                if (!window.jXHR) {
+                    var jxhr = document.createElement('script');
+                    jxhr.type = 'text/javascript';
+                    jxhr.src = 'http://proycon.github.io/theme/js/jXHR.js';
+                    var s = document.getElementsByTagName('script')[0];
+                    s.parentNode.insertBefore(jxhr, s);
+                }
+
+                github.showRepos({
+                    user: 'proycon',
+                    count: 8,
+                    skip_forks: true,
+                    target: '#gh_repos'
+                });
+            });
+        </script>
+        <script src="http://proycon.github.io/theme/js/github.js" type="text/javascript"></script>
+    </section>
+</aside>        </div>
+    </div>
+</div>
+
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="http://proycon.github.io/theme/js/bootstrap.min.js"></script>
+
+<!-- Enable responsive features in IE8 with Respond.js (https://github.com/scottjehl/Respond) -->
+<script src="http://proycon.github.io/theme/js/respond.min.js"></script>
+    <script type="text/javascript">
+        /* * * CONFIGURATION VARIABLES: EDIT BEFORE PASTING INTO YOUR WEBPAGE * * */
+        var disqus_shortname = 'contemplativecoding'; // required: replace example with your forum shortname
+
+        /* * * DON'T EDIT BELOW THIS LINE * * */
+        (function () {
+            var s = document.createElement('script');
+            s.async = true;
+            s.type = 'text/javascript';
+            s.src = '//' + disqus_shortname + '.disqus.com/count.js';
+            (document.getElementsByTagName('HEAD')[0] || document.getElementsByTagName('BODY')[0]).appendChild(s);
+        }());
+    </script>
+</body>
+</html>
