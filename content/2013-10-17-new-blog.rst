@@ -4,19 +4,30 @@ And so it begins...
 :date: 2013-11-17 12:00
 :comments: true
 :slug: new-blog
-:summary: Welcome to my new tech blog! My aim here is to show some of the things I'm working on, and in doing so hopefully providing others with useful open source tools and ideas for their own projects....
+:summary: Welcome to my new blog! Here I will talk about software development and show some of the things I am working on. At times it is good to take some distance from coding, and contemplate that what you have written. I doing so, I can hopefully offer interesting open source tools and ideas to the community.
 :lang: en
 :tags: intro
 :category: main
 
-Welcome to my new tech blog! My aim here is to show some of the things I'm working on,
-and in doing so hopefully providing others with useful open source tools and
-ideas for their own projects.
+Welcome to my new blog! Here I will talk about software development and show
+some of the things I am working on. At times it is good to take some distance
+from coding, and contemplate that what you have written. I doing so, I can
+hopefully offer interesting open source tools and ideas to the community.
 
 A small introduction may be in order for those who don't know me yet. My name
-is Maarten van Gompel (aka proycon), and I'm a PhD researcher and scientific
-programmer at the Centre for Language Studies, Radboud University Nijmegen.  
+is *Maarten van Gompel* (aka proycon). I am a PhD researcher and scientific
+programmer at the Centre for Language Studies, Radboud University Nijmegen. I
+love both languages as well as technology and I am happily working in the field
+where these two independent interests meet: *Natural Language Processing* or *Computational Linguistics*.
+
+My PhD project *Colibri* focusses on the role of constructions in Machine Translation, as well
+as related techniques such as Cross-Lingual Word Sense Disambiguation.  
+
+I'm an avid open source advocate and linux fan. My tools of the trade are
+mostly Python and C++, sometimes along with web technologies such as Django,
+CSS, HTML, Javascript/Jquery. 
 
 Starting a blog always comes with the obvious but daunting obligation of
-maintaining it. Expect to see an occasional, like bi-monthly, post.
+maintaining it. Expect to see an occasional, like bi-monthly, posts. So keep
+posted!
 
