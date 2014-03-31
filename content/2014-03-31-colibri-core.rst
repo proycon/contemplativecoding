@@ -1,5 +1,5 @@
-Modelling n-grams, skipgrams and flexgrams in corpora with Colibri Core
-#############################################################################
+Efficiently modelling n-grams, skipgrams and flexgrams from large corpora with Colibri Core
+############################################################################################
 
 :date: 2014-03-31 12:00
 :comments: true
@@ -9,33 +9,20 @@ Modelling n-grams, skipgrams and flexgrams in corpora with Colibri Core
 :tags: ngrams, skipgrams, python
 :category: main
 
-In this first actual blog post I would like to introduce Natural Language
-Processing software I developed in the scope of my Ph.D research at Radboud University Nijmegen: **Colibri Core**.
+In this first actual blog post (yes, it was long overdue, I know) I would like to introduce open-source Natural Language
+Processing software I developed in the scope of my PhD research at Radboud University Nijmegen: **Colibri Core**.
+
 
 ===================
 Introduction
 ===================
 
-Everything is open-source (GPLv3) and can be obtained from:
-http://github.com/proycon/colibri-core
-
-Documentation is available from http://proycon.github.io/colibri-core/doc/ ,
-which documents installation, usage as well as the Python API.
-
-In this blog post I will merely illustrate the paradigm and the features of
-Colibri Core, so you get a clear impression of the possibilities. For more I
-refer to the aforementioned documentation.
-
-===================
-Patterns
-===================
-
 Colibri Core is software to quickly and efficiently count and extract patterns from large corpus data, to extract various statistics on the extracted patterns, and to compute relations between the extracted patterns. The employed notion of *pattern* or *construction* encompasses the following categories:
 
-* **n-gram**        *n* consecutive words
-* **skipgram**      An abstract pattern of predetermined length with one or multiple gaps (of
+* **n-gram**    --    *n* consecutive words
+* **skipgram**  --    An abstract pattern of predetermined length with one or multiple gaps (of
   specific size). 
-* **flexgram**      An abstract pattern without predetermined length, with one
+* **flexgram**  --    An abstract pattern without predetermined length, with one
   or more gaps.
 
 N-gram extraction may seem fairly trivial at first, with a few lines in your
@@ -45,9 +32,9 @@ approach however makes an unnecessarily high demand on memory resources, this
 often becomes prohibitive if unleashed on large corpora. Colibri Core tries to minimise
 these space requirements in several ways:
 
-* **Binary representation**     Each word type is assigned a numeric class,
+* **Binary representation** --  Each word type is assigned a numeric class,
   which is encoded in a compact binary format in which highly frequent classes take less space than less frequent classes. Colibri core always uses this representation rather than a full string representation, both on disk and in memory.
-* **Informed counting**      Counting is performed more intelligently by iteratively processing the corpus in several
+* **Informed counting** -- Counting is performed more intelligently by iteratively processing the corpus in several
   passes and quickly discarding patterns that won't reach the desired occurrence threshold.
 
 Skipgram and flexgram extraction are computationally more demanding but have
@@ -68,9 +55,9 @@ and relations, and manipulate models.
 A pattern model is simply a collection of extracted patterns (any of the three categories) and their counts from a
 specific corpus. Pattern models come in two varieties:
 
-* **Unindexed Pattern Model** - The simplest form, which simply stores the
+* **Unindexed Pattern Model** -- The simplest form, which simply stores the
   patterns and their count.
-* **Indexed Pattern Model**   - The more informed form, which retains all
+* **Indexed Pattern Model** -- The more informed form, which retains all
   indices to the original corpus, at the cost of more memory/diskspace.
 
 The Indexed Pattern Model is much more powerful, and allows more statistics and
@@ -85,11 +72,11 @@ Statistics
 
 The statistics that are reported on are:
 
-* **Occurrence count** - The absolute number of times a pattern occurs
-* **Tokens covered** - The absolute number of tokens in the corpus that a pattern covers. Computed as ``occurrencecount * n``.
-* **Coverage** - The number of covered tokens, as a fraction of the total number of tokens in the original corpus.
-* **Frequency** - The frequency of the pattern within its category and size class, so for an ngram of size two, the frequency indicates the frequency amongst all bigrams.
-* **Types** - The number of unique word types covered.
+* **Occurrence count** -- The absolute number of times a pattern occurs
+* **Tokens covered** -- The absolute number of tokens in the corpus that a pattern covers. Computed as ``occurrencecount * n``.
+* **Coverage** -- The number of covered tokens, as a fraction of the total number of tokens in the original corpus.
+* **Frequency** -- The frequency of the pattern within its category and size class, so for an ngram of size two, the frequency indicates the frequency amongst all bigrams.
+* **Types** -- The number of unique word types covered.
 
 These can be reported afer querying for specific patterns, or for groups (e.g.
 all bigrams). For unindexed models, coverage computation is a mere
@@ -133,9 +120,9 @@ Relations
 
 Various relations can be extracted from patterns in an indexed pattern model:
 
-* **Subsumption relations** - Patterns that are subsumed by larger patterns are called subsumption children, the larger patterns are called subsumption parents. These are the two subsumption relations that can be extracted from an indexed pattern model.
-* **Successor relations** - Patterns that follow eachother are in a left-of/right-of relation.
-* **Instantiation relations** - There is a relation between skipgrams and patterns that instantiate them: ``to be {*1*} not {*1*} be`` is instantiated by ``to {*1*} or``.
+* **Subsumption relations** -- Patterns that are subsumed by larger patterns are called subsumption children, the larger patterns are called subsumption parents. These are the two subsumption relations that can be extracted from an indexed pattern model.
+* **Successor relations** -- Patterns that follow eachother are in a left-of/right-of relation.
+* **Instantiation relations** -- There is a relation between skipgrams and patterns that instantiate them: ``to be {*1*} not {*1*} be`` is instantiated by ``to {*1*} or``.
 
 A web-based tool is available that allows these relations to be visualised and navigated interactively.
 
@@ -164,6 +151,15 @@ Python scripts (version 3 is supported).
 The software offers a powerful command-line tool, designed for Unix-based
 systems such as Linux.  
 
+Download & Documentation
+--------------------------
+
+Everything is open-source (GPLv3) and can be obtained from:
+http://github.com/proycon/colibri-core
+
+Documentation is available from http://proycon.github.io/colibri-core/doc/ ,
+which documents installation, usage as well as the Python API.
+
 Under the hood
 -----------------
 
@@ -180,6 +176,6 @@ prefix tries/suffix tries or suffix arrays.
 A schematic overview of the Colibri Core architecture is available below, consult the
 documentation at http://proycon.github.io/colibri-core/doc/ for more details.
 
-image::http://proycon.github.io/colibri-core/doc/images/arch.png
+.. image:: http://proycon.github.io/colibri-core/doc/images/arch.png
 
 
