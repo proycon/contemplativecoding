@@ -6,6 +6,14 @@ body {
     background-color: transparent;
 }
 
+#sidebar {
+    position: absolute;
+    right: 0px;
+    width: 250px;
+    margin-bottom: -10px;
+    padding-top: 0px;
+}
+
 .list-group-item {
     border: none;
 }
@@ -78,3 +86,36 @@ a, a:hover {
     color: #777;
     font-style: italic;
 }
+#logo {
+    float: left;
+    background: url(../images/logo.png) no-repeat;
+    width: 100px; 
+    height: 48px;
+    margin-left: -100px;
+}
+.list-group-item-narrow {
+    display: block;
+    margin-bottom: -1px;
+    padding: 3px 20px;
+    position-relative;
+}
+
+#footer {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 80%;
+    margin-top: 150px;
+    bottom: 0px;
+}
+#footer ul {
+    display: block;
+    margin-top: 5px;
+    font-family: monospace;
+    list-style-type: none;
+}
+#footer li {
+    padding-left: 20px;
+}
+
+
