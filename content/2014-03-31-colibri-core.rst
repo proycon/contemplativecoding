@@ -1,5 +1,5 @@
 Modelling n-grams, skipgrams and flexgrams in corpora with Colibri Core
-############################################
+#############################################################################
 
 :date: 2014-03-31 12:00
 :comments: true
@@ -12,9 +12,9 @@ Modelling n-grams, skipgrams and flexgrams in corpora with Colibri Core
 In this first actual blog post I would like to introduce Natural Language
 Processing software I developed in the scope of my Ph.D research at Radboud University Nijmegen: **Colibri Core**.
 
-====
+===================
 Introduction
-====
+===================
 
 Everything is open-source (GPLv3) and can be obtained from:
 http://github.com/proycon/colibri-core
@@ -26,9 +26,9 @@ In this blog post I will merely illustrate the paradigm and the features of
 Colibri Core, so you get a clear impression of the possibilities. For more I
 refer to the aforementioned documentation.
 
-=======
+===================
 Patterns
-=======
+===================
 
 Colibri Core is software to quickly and efficiently count and extract patterns from large corpus data, to extract various statistics on the extracted patterns, and to compute relations between the extracted patterns. The employed notion of *pattern* or *construction* encompasses the following categories:
 
@@ -56,9 +56,9 @@ abstracting over n-grams, and flexgrams in turn are computed either by abstracti
 over skipgrams, or directly from n-grams on the basis of co-occurrence information (mutual
 pointwise information). 
 
-=====
+=================
 Pattern Models
-=====
+=================
 
 At the heart of the sofware is the notion of pattern models. The core tool, to
 be used from the command-line, is ``colibri-patternmodeller`` which enables you to
@@ -140,7 +140,7 @@ Various relations can be extracted from patterns in an indexed pattern model:
 A web-based tool is available that allows these relations to be visualised and navigated interactively.
 
 Manipulating models
------------
+-----------------------
 
 Models can be actively manipulated by filtering and intersecting them with
 other models. They can moreover be manipulated at a more finegrained level from
@@ -152,9 +152,9 @@ test data, but constrained using the training model. This results in a model
 that contains only all patterns occurring both in training and test data, the
 coverage metric of such a model thus provides a rough measure of overlap between corpora.
 
-=====
+===============
 Implementation
-=====
+===============
 
 Colibri Core is entirely implemented in C++, to ensure efficiency with regard
 to speed and memory. A full Python binding, directly interfacing with the native code,
@@ -165,7 +165,7 @@ The software offers a powerful command-line tool, designed for Unix-based
 systems such as Linux.  
 
 Under the hood
------
+-----------------
 
 The API of Colibri Core offers an ideal foundation for building NLP software
 that works on large numbers of patterns, and which seeks to constrain memory
