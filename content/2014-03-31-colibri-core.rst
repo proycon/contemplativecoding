@@ -1,7 +1,7 @@
 Modelling n-grams, skipgrams and flexgrams in corpora with Colibri Core
 ############################################
 
-:date: 2014-04-31 12:00
+:date: 2014-03-31 12:00
 :comments: true
 :slug: colibri-core
 :summary: Colibri Core is open-source software to quickly and efficiently count and extract patterns from large corpus data, to extract various statistics on the extracted patterns, and to compute relations between the extracted patterns. The software offers tools, that can be used from the command-line, as well as an API that can be used from Python scripts or C++ programs.
@@ -137,8 +137,7 @@ Various relations can be extracted from patterns in an indexed pattern model:
 * **Successor relations** - Patterns that follow eachother are in a left-of/right-of relation.
 * **Instantiation relations** - There is a relation between skipgrams and patterns that instantiate them: ``to be {*1*} not {*1*} be`` is instantiated by ``to {*1*} or``.
 
-A web-based tool is available that allows these relations to be visualised and navigated interactively:
-
+A web-based tool is available that allows these relations to be visualised and navigated interactively.
 
 Manipulating models
 -----------
@@ -165,7 +164,6 @@ Python scripts (version 3 is supported).
 The software offers a powerful command-line tool, designed for Unix-based
 systems such as Linux.  
 
------
 Under the hood
 -----
 
@@ -181,3 +179,7 @@ prefix tries/suffix tries or suffix arrays.
 
 A schematic overview of the Colibri Core architecture is available below, consult the
 documentation at http://proycon.github.io/colibri-core/doc/ for more details.
+
+image::http://proycon.github.io/colibri-core/doc/images/arch.png
+
+
