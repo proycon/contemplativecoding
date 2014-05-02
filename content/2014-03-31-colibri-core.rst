@@ -158,7 +158,10 @@ Everything is open-source (GPLv3) and can be obtained from:
 http://github.com/proycon/colibri-core
 
 Documentation is available from http://proycon.github.io/colibri-core/doc/ ,
-which documents installation, usage as well as the Python API.
+which documents installation, usage as well as the Python API. A Python
+Tutorial is also available, in the form of an ipython notebook (included in the
+colibri-core source), a read-only version can be found here:
+http://proycon.github.io/colibri-core/doc/colibricore-python-tutorial.html
 
 Under the hood
 -----------------
